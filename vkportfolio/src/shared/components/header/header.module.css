@@ -1,0 +1,91 @@
+.headerView {
+  @apply fixed z-50 w-full p-5 shadow-lg bg-white;
+}
+
+.navbar {
+  @apply flex flex-row justify-between items-center;
+}
+
+.navbrandText {
+  @apply text-lg md:text-2xl font-bold text-black;
+}
+
+.navMenu {
+  @apply hidden lg:flex flex-row justify-between gap-7;
+}
+
+.navItem {
+  @apply cursor-pointer hover:scale-105 duration-150;
+}
+
+.activeNavItem {
+  @apply scale-100 duration-100;
+}
+
+.navItemText {
+  @apply text-base font-medium text-white lg:text-black text-opacity-80;
+}
+
+.activeItemText {
+  @apply text-base text-blue-500 font-semibold;
+}
+
+.navItemBorder {
+  @apply border-b-2 mx-2 mt-2 opacity-0 border-black;
+}
+
+.navItem:hover .navItemBorder {
+  @apply opacity-100 transition-opacity duration-700;
+}
+
+.activeNavItemBorder {
+  @apply border-b-2 mx-2 mt-2 opacity-100 border-blue-500;
+}
+
+/* Mobile menu */
+
+.mobileMenu {
+  @apply z-20 hidden absolute flex-col items-center justify-start bottom-0 h-screen w-full bg-black bg-opacity-90 pt-32 space-y-10;
+}
+
+.mobileMenu.active {
+  @apply flex duration-700 md:hidden;
+}
+
+.hamburgerSection {
+  @apply block lg:hidden cursor-pointer absolute z-50 bottom-0 right-5 w-[24px] h-[24px] top-6 transition-all duration-75 rotate-0;
+}
+
+.hamburgerTop,
+.hamburgerMiddle,
+.hamburgerBottom {
+  @apply w-[24px] h-[2px] bg-black top-0 left-0 absolute rotate-0 transition-all duration-75;
+}
+
+.hamburgerMiddle {
+  /* transform: translateY(7px); */
+  @apply translate-y-[7px] transition-all duration-700;
+}
+
+.hamburgerBottom {
+  /* transform: translateY(14px); */
+  @apply translate-y-[14px] transition-all duration-700;
+}
+
+.open {
+  /* transform: rotate(90deg); */
+  @apply rotate-90 transition-all duration-700;
+}
+
+.open .hamburgerTop {
+  /* transform: rotate(45deg) translateY(6px) translateX(6px); */
+  @apply rotate-45 translate-y-[6px] translate-x-[6px] bg-white;
+}
+
+.open .hamburgerMiddle {
+  @apply hidden transition-all duration-700;
+}
+
+.open .hamburgerBottom {
+  @apply -rotate-45 translate-y-[6px] translate-x-[6px] bg-white;
+}

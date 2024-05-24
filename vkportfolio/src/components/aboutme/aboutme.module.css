@@ -1,0 +1,15 @@
+.aboutusView {
+  @apply my-10 mx-5;
+}
+
+.aboutusTitle {
+  @apply text-3xl font-bold;
+}
+
+.aboutmeCard {
+  @apply p-4 shadow-xl text-base font-normal rounded-md border-2 mt-5;
+}
+
+.description {
+  @apply mt-5;
+}
