@@ -3,11 +3,11 @@
 }
 
 .aboutusTitle {
-  @apply text-3xl font-bold;
+  @apply text-3xl text-black font-bold;
 }
 
 .aboutmeCard {
-  @apply p-4 shadow-xl text-base font-normal rounded-md border-2 mt-5;
+  @apply p-4 shadow-xl text-black text-base font-normal rounded-md border-2 mt-5;
 }
 
 .description {

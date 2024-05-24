@@ -1,5 +1,5 @@
 .headerView {
-  @apply fixed z-50 w-full p-5 shadow-lg bg-white;
+  @apply fixed z-10 w-full p-5 shadow-lg bg-white;
 }
 
 .navbar {
@@ -53,7 +53,7 @@
 }
 
 .hamburgerSection {
-  @apply block lg:hidden cursor-pointer absolute z-50 bottom-0 right-5 w-[24px] h-[24px] top-6 transition-all duration-75 rotate-0;
+  @apply  lg:hidden cursor-pointer absolute z-50 bottom-0 right-5 w-[24px] h-[24px] top-6 transition-all duration-75 rotate-0;
 }
 
 .hamburgerTop,

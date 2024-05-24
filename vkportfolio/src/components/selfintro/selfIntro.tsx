@@ -26,7 +26,9 @@ const SelfIntro = () => {
       >
         <motion.img
           initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
+          whileInView={{scale:1}}
+          // animate={{ scale: 1 }}
+          // viewport={{once:true}}
           transition={{ duration: 1 }}
           // src={"/profile_pic.jpg"}
           alt="Profile Pic"

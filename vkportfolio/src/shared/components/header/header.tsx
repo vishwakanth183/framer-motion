@@ -143,6 +143,7 @@ const Header = () => {
           </motion.div>
         </nav>
 
+      </div>
         {/* Hamburger section */}
         <button
           id="menu-btn"
@@ -153,7 +154,6 @@ const Header = () => {
           <div className={headerStyle.hamburgerMiddle}></div>
           <div className={headerStyle.hamburgerBottom}></div>
         </button>
-      </div>
       {/* Mobile menu section */}
       <div id="mobile-menu" className={`${headerStyle.mobileMenu}`}>
         <MenuItems />

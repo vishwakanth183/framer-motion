@@ -1,0 +1,24 @@
+.experienceView {
+    @apply my-10 mx-5;
+  }
+  
+.experienceTitle {
+    @apply text-3xl text-black font-bold;
+  }
+
+.gridCard {
+    @apply grid grid-rows-1 md:grid-rows-2 md:grid-flow-col gap-4 p-4 shadow-xl rounded-md border-2 mt-5;
+  }
+
+.expCard{
+    @apply p-3 rounded-md border-2 shadow-lg cursor-pointer
+}
+
+.expRole{
+    @apply text-xl text-purple-600 font-bold
+}
+
+.expLocation{
+    @apply text-lg text-black text-opacity-75
+}
+  
