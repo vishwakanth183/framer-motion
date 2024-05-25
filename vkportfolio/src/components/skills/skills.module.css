@@ -1,0 +1,23 @@
+.skillsView {
+  @apply my-10 mx-5;
+}
+
+.skillsTitle {
+  @apply text-2xl lg:text-3xl text-black font-bold;
+}
+
+.gridCard {
+  @apply grid grid-cols-2 lg:grid-cols-9 gap-10 p-4 shadow-xl rounded-md border-2 mt-5;
+}
+
+.skillItem {
+  @apply flex flex-col justify-center items-center;
+}
+
+.skillImage {
+  @apply rounded-lg w-[80px] h-[80px] shadow-lg ring-1 ring-purple-300 p-3 justify-center object-contain;
+}
+
+.skillName {
+  @apply text-sm md:text-sm text-purple-600 text-opacity-80 mt-4 font-normal line-clamp-1;
+}

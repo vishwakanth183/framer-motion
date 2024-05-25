@@ -7,6 +7,9 @@ import { motion } from "framer-motion";
 import SelfIntro from "./selfintro/selfIntro";
 import AboutMe from "./aboutme/aboutme";
 import Experience from "./experience/experience";
+import Skills from "./skills/skills";
+import Achievement from "./achievements/achievements";
+import Certification from "./certification/certification";
 
 const PortfolioHome = () => {
   const [onClientSide, setOnClientSide] = useState<boolean>(false);
@@ -24,6 +27,9 @@ const PortfolioHome = () => {
       <SelfIntro />
       <AboutMe />
       <Experience />
+      <Skills />
+      <Achievement />
+      <Certification />
     </div>
   );
 };

@@ -1,5 +1,21 @@
 .selfIntroView {
-  @apply mt-36;
+  @apply mt-36 mx-5;
+}
+
+.gridSelfIntro {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-3 my-10;
+}
+
+.profileView {
+  @apply flex flex-col items-center justify-start;
+}
+
+.contactView {
+  @apply flex flex-col lg:flex-row shadow-xl rounded-md border-2 py-5 items-center;
+}
+
+.leftView {
+  @apply flex flex-col gap-3 pl-0 lg:pl-6;
 }
 
 .nameText {
@@ -20,4 +36,28 @@
 
 .roleText {
   @apply font-semibold text-lg lg:text-xl text-center text-orange-400 mt-1;
+}
+
+.githubView {
+  @apply flex py-3 flex-row gap-3 bg-black text-lg font-semibold text-white items-center justify-center hover:scale-110 duration-200 w-48 self-center rounded-full cursor-pointer;
+}
+
+.githubIcon {
+  @apply flex flex-shrink-0 size-8 text-white;
+}
+
+.linkedinView {
+  @apply flex py-3 flex-row gap-3 bg-blue-500 text-lg font-semibold text-white items-center justify-center hover:scale-110 duration-200 w-48 self-center rounded-full cursor-pointer;
+}
+
+.linkedinIcon {
+  @apply flex flex-shrink-0 size-8 text-blue-500;
+}
+
+.resumeView {
+  @apply flex py-3 flex-row gap-3 bg-green-400 text-lg font-semibold text-white items-center justify-center hover:scale-110 duration-200 w-48 self-center rounded-full cursor-pointer;
+}
+
+.resumeIcon {
+  @apply flex flex-shrink-0 size-8 text-green-400;
 }

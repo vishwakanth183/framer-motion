@@ -1,6 +1,6 @@
 export interface myAchievement {
   achievement: string;
-  awaredBy: string;
+  awardedBy: string;
   year: number;
   awardType: string;
 }
@@ -11,26 +11,26 @@ export const totalAchievements = [
     achievements: [
       {
         achievement: "Mr.Beyond Expectation",
-        awaredBy: "Centizen Inc",
+        awardedBy: "Centizen Inc",
         year: 2023,
         awardType: "Personal",
       },
       {
-        achievement: "Mission posible",
+        achievement: "Mission possible",
         for: "leading the team to glory",
-        awaredBy: "Centizen Inc",
+        awardedBy: "Centizen Inc",
         year: 2023,
         awardType: "Team",
       },
       {
         achievement: "Outstanding Contributor",
-        awaredBy: "Centizen Inc",
+        awardedBy: "Centizen Inc",
         year: 2022,
         awardType: "Personal",
       },
       {
-        achievement: "Out of box thiker",
-        awaredBy: "Centizen Inc",
+        achievement: "Out of box thinker",
+        awardedBy: "Centizen Inc",
         year: 2021,
         awardType: "Personal",
       },

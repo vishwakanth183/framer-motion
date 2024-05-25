@@ -3,7 +3,7 @@
 }
 
 .aboutusTitle {
-  @apply text-3xl text-black font-bold;
+  @apply text-2xl lg:text-3xl text-black font-bold;
 }
 
 .aboutmeCard {

@@ -1,24 +1,35 @@
 .experienceView {
-    @apply my-10 mx-5;
-  }
-  
+  @apply my-10 mx-5;
+}
+
 .experienceTitle {
-    @apply text-3xl text-black font-bold;
-  }
+  @apply text-2xl lg:text-3xl text-black font-bold;
+}
 
 .gridCard {
-    @apply grid grid-rows-1 md:grid-rows-2 md:grid-flow-col gap-4 p-4 shadow-xl rounded-md border-2 mt-5;
-  }
-
-.expCard{
-    @apply p-3 rounded-md border-2 shadow-lg cursor-pointer
+  @apply grid grid-cols-1 md:grid-cols-2 gap-10 p-4 shadow-xl rounded-md border-2 mt-5;
 }
 
-.expRole{
-    @apply text-xl text-purple-600 font-bold
+.itemView {
+  @apply flex flex-row gap-3 items-center py-1;
 }
 
-.expLocation{
-    @apply text-lg text-black text-opacity-75
+.expCard {
+  @apply p-3 rounded-md border-none shadow-md cursor-pointer bg-purple-50;
 }
-  
+
+.expRole {
+  @apply text-lg md:text-xl text-purple-800 font-medium;
+}
+
+.expLocation {
+  @apply text-sm text-black text-opacity-75;
+}
+
+.expDuration {
+  @apply text-sm text-black text-opacity-75;
+}
+
+.iconView {
+  @apply opacity-80;
+}

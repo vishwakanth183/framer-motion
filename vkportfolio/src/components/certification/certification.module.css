@@ -1,0 +1,23 @@
+.certificationView {
+  @apply my-10 mx-5;
+}
+
+.certificationTitle {
+  @apply text-2xl lg:text-3xl text-black font-bold;
+}
+
+.certficationGrid {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-10 p-4 shadow-xl rounded-md border-2 mt-5;
+}
+
+.linkView {
+  @apply flex flex-row gap-3 items-center;
+}
+
+.certificateName {
+  @apply text-lg font-medium opacity-75;
+}
+
+.certificateIcon {
+  @apply size-8 text-green-500 flex flex-shrink-0;
+}

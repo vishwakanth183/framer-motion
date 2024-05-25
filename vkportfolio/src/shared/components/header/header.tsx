@@ -142,22 +142,27 @@ const Header = () => {
             <MenuItems />
           </motion.div>
         </nav>
-
       </div>
-        {/* Hamburger section */}
-        <button
-          id="menu-btn"
-          onClick={() => onHamburgerTap(!isMobileMenu)}
-          className={`${headerStyle.hamburgerSection}`}
-        >
-          <div className={headerStyle.hamburgerTop}></div>
-          <div className={headerStyle.hamburgerMiddle}></div>
-          <div className={headerStyle.hamburgerBottom}></div>
-        </button>
+      {/* Hamburger section */}
+      <button
+        id="menu-btn"
+        onClick={() => onHamburgerTap(!isMobileMenu)}
+        className={`${headerStyle.hamburgerSection}`}
+      >
+        <div className={headerStyle.hamburgerTop}></div>
+        <div className={headerStyle.hamburgerMiddle}></div>
+        <div className={headerStyle.hamburgerBottom}></div>
+      </button>
       {/* Mobile menu section */}
-      <div id="mobile-menu" className={`${headerStyle.mobileMenu}`}>
+      <motion.div
+        whileInView={{ scale: 1, opacity: 1 }}
+        initial={{ scale: 0.9, opacity: 0 }}
+        transition={{ duration: 0 }}
+        id="mobile-menu"
+        className={`${headerStyle.mobileMenu}`}
+      >
         <MenuItems />
-      </div>
+      </motion.div>
     </>
   );
 };

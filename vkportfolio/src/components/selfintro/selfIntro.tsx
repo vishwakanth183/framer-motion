@@ -4,6 +4,9 @@ import React, { useLayoutEffect, useState } from "react";
 import selfIntro from "./selfIntro.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { FaGithub as GithubIcon } from "react-icons/fa";
+import { FaLinkedin as LinkedinIcon } from "react-icons/fa";
+import { RiAccountPinCircleFill as ResumeIcon } from "react-icons/ri";
 
 const SelfIntro = () => {
   const [onClientSide, setOnClientSide] = useState<boolean>(false);
@@ -18,39 +21,64 @@ const SelfIntro = () => {
 
   return (
     <motion.div className={selfIntro.selfIntroView} id="aboutme">
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 2 }}
         className={`${selfIntro.welcomeView}`}
-      >
-        <motion.img
-          initial={{ scale: 0 }}
-          whileInView={{scale:1}}
-          // animate={{ scale: 1 }}
-          // viewport={{once:true}}
-          transition={{ duration: 1 }}
-          // src={"/profile_pic.jpg"}
-          alt="Profile Pic"
-          src={
-            "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=600"
-          }
-          className={`${selfIntro.profilePic}`}
-        />
-        {/* <div className={`${selfIntro.profilePic}`}></div> */}
-        <div>
-          <span className={`${selfIntro.nameText}`}>Hi, I am</span>
-          <span className={`${selfIntro.highlightText}`}>Vishwakanth</span>
+      > */}
+      <div className={selfIntro.gridSelfIntro}>
+        <div className={selfIntro.profileView}>
+          <motion.img
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            // animate={{ scale: 1 }}
+            // viewport={{once:true}}
+            transition={{ duration: 1 }}
+            // src={"/profile_pic.jpg"}
+            alt="Profile Pic"
+            src={
+              "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=600"
+            }
+            className={`${selfIntro.profilePic}`}
+          />
+          {/* <div className={`${selfIntro.profilePic}`}></div> */}
+          <div>
+            <span className={`${selfIntro.nameText}`}>Hi, I am</span>
+            <span className={`${selfIntro.highlightText}`}>Vishwakanth</span>
+          </div>
+          <motion.span
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 1.5, type: "spring" }}
+            className={`${selfIntro.roleText}`}
+          >
+            Senior Software Developer
+          </motion.span>
         </div>
-        <motion.span
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 1.5, type: "spring" }}
-          className={`${selfIntro.roleText}`}
-        >
-          Senior Software Developer
-        </motion.span>
-      </motion.div>
+        <div className={selfIntro.contactView}>
+          <div className={selfIntro.leftView}>
+            {/* Github */}
+            <div className={selfIntro.githubView}>
+              <GithubIcon className={selfIntro.githubIcon} />
+              <span>Github</span>
+            </div>
+
+            {/* Linkedin */}
+            <div className={selfIntro.linkedinView}>
+              <LinkedinIcon className={selfIntro.githubIcon} />
+              <span>Linkedin</span>
+            </div>
+
+            {/* Resume */}
+            <div className={selfIntro.resumeView}>
+              <ResumeIcon className={selfIntro.githubIcon} />
+              <span>Resume</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* </motion.div> */}
     </motion.div>
   );
 };
