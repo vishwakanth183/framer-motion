@@ -9,3 +9,34 @@ My short-term goal is to further explore various technologies and expand my skil
 Beyond my professional endeavors, I am driven by a commitment to continuous learning and growth, constantly seeking opportunities to enhance my knowledge and contribute meaningfully to the IT world.\n
 Thank you for taking the time to explore my portfolio. I look forward to the opportunity to collaborate with you on creating elegant applications.
 `;
+
+export const keywords = [
+    "Vishwakanth Portfolio",
+    "MERN Stack Developer",
+    "Francis Xavier Engineering College",
+    "Centizen",
+    "Centizen Developer",
+    "Tirunelveli Developer",
+    "Indian Developer",
+    "Full Stack Developer",
+    "React Native Developer",
+    "Front-End Developer",
+    "JavaScript Developer",
+    "Team Leader",
+    "React Native",
+    "Redux",
+    "React",
+    "Next.js",
+    "Node.js",
+    "MongoDB",
+    "PostgreSQL",
+    "TypeScript",
+    "Mobile App Development",
+    "E-commerce Development",
+    "Human Resource Management App Development",
+    "Academic Excellence",
+    "Innovation",
+    "Out of the Box Thinking",
+    "Collaboration",
+    "Fast and Elegant Delivery",
+  ];

@@ -180,9 +180,9 @@ const Header = () => {
         onClick={() => onHamburgerTap(!isMobileMenu)}
         className={`${headerStyle.hamburgerSection}`}
       >
-        <div className={headerStyle.hamburgerTop}></div>
-        <div className={headerStyle.hamburgerMiddle}></div>
-        <div className={headerStyle.hamburgerBottom}></div>
+        <div className={`${headerStyle.hamburgerTop} ${resolvedTheme == "dark" ? headerStyle.hamburgerDarkMode : ""}`}></div>
+        <div className={`${headerStyle.hamburgerMiddle} ${resolvedTheme == "dark" ? headerStyle.hamburgerDarkMode : ""}`}></div>
+        <div className={`${headerStyle.hamburgerBottom} ${resolvedTheme == "dark" ? headerStyle.hamburgerDarkMode : ""}`}></div>
       </button>
       {/* Mobile menu section */}
       <motion.div
