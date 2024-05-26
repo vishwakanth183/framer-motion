@@ -10,9 +10,12 @@ import Experience from "./experience/experience";
 import Skills from "./skills/skills";
 import Achievement from "./achievements/achievements";
 import Certification from "./certification/certification";
+import { useTheme } from "next-themes";
 
 const PortfolioHome = () => {
   const [onClientSide, setOnClientSide] = useState<boolean>(false);
+  const { setTheme, resolvedTheme } = useTheme();
+  
 
   useLayoutEffect(() => {
     setOnClientSide(true);
@@ -23,7 +26,8 @@ const PortfolioHome = () => {
   }
 
   return (
-    <div className={`${portfolioHome.mainView}`}>
+    // <div className="text-xl text-blue-500 dark:text-yellow-500 bg-green-400 flex h-screen items-center">hey just checking dark</div>
+    <div className={`${portfolioHome.mainView} ${resolvedTheme == "dark" ? portfolioHome.darkModeView : ""}`}>
       <SelfIntro />
       <AboutMe />
       <Experience />

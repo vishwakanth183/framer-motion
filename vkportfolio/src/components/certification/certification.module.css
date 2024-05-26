@@ -6,6 +6,10 @@
   @apply text-2xl lg:text-3xl text-black font-bold;
 }
 
+.certificationTitleDark{
+  @apply text-white
+}
+
 .certficationGrid {
   @apply grid grid-cols-1 lg:grid-cols-3 gap-10 p-4 shadow-xl rounded-md border-2 mt-5;
 }
@@ -15,7 +19,11 @@
 }
 
 .certificateName {
-  @apply text-lg font-medium opacity-75;
+  @apply text-lg font-medium opacity-75 text-black;
+}
+
+.certificateNameDark{
+  @apply text-white
 }
 
 .certificateIcon {

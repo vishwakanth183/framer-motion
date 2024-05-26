@@ -1,15 +1,25 @@
 "use client";
 
-import React, { useLayoutEffect, useState } from "react";
+import React, { useContext, useLayoutEffect, useState } from "react";
 import selfIntro from "./selfIntro.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaGithub as GithubIcon } from "react-icons/fa";
 import { FaLinkedin as LinkedinIcon } from "react-icons/fa";
-import { RiAccountPinCircleFill as ResumeIcon } from "react-icons/ri";
+import { FaFileDownload as ResumeIcon } from "react-icons/fa";
+// import { RiAccountPinCircleFill as ResumeIcon } from "react-icons/ri";
+import { UserContext } from "@/src/shared/context/useContext";
+import { MdOutgoingMail as EmailIcon } from "react-icons/md";
+import { MdPhonelinkRing as MobileIcon } from "react-icons/md";
+import Link from "next/link";
+import { githubLink, linkedInUrl } from "@/src/shared/contents/common";
+import { useTheme } from "next-themes";
 
 const SelfIntro = () => {
   const [onClientSide, setOnClientSide] = useState<boolean>(false);
+  const { setCurrentPage } = useContext(UserContext)
+  const { setTheme, resolvedTheme } = useTheme();
+
 
   useLayoutEffect(() => {
     setOnClientSide(true);
@@ -20,7 +30,9 @@ const SelfIntro = () => {
   }
 
   return (
-    <motion.div className={selfIntro.selfIntroView} id="aboutme">
+    <motion.div className={`${selfIntro.selfIntroView} ${resolvedTheme == "dark" ? selfIntro.darkSelfintroView : ""}`} id="aboutme"
+      onViewportEnter={() => { setCurrentPage!("About Me") }}
+    >
       {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -44,7 +56,7 @@ const SelfIntro = () => {
           />
           {/* <div className={`${selfIntro.profilePic}`}></div> */}
           <div>
-            <span className={`${selfIntro.nameText}`}>Hi, I am</span>
+            <span className={`${selfIntro.nameText} ${resolvedTheme == "dark" ? selfIntro.darkText : ""}`}>Hi, I am</span>
             <span className={`${selfIntro.highlightText}`}>Vishwakanth</span>
           </div>
           <motion.span
@@ -56,27 +68,54 @@ const SelfIntro = () => {
             Senior Software Developer
           </motion.span>
         </div>
-        <div className={selfIntro.contactView}>
-          <div className={selfIntro.leftView}>
-            {/* Github */}
-            <div className={selfIntro.githubView}>
-              <GithubIcon className={selfIntro.githubIcon} />
-              <span>Github</span>
+        <motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{delay:1,duration:1}}
+        className={selfIntro.contactView}>
+          {/* Contact info text */}
+          <span className={selfIntro.contactInfoText}>
+            Contact Info
+          </span>
+          {/* Divider */}
+          <div className={selfIntro.divider}></div>
+
+          <div className={selfIntro.infoView}>
+            {/* Email View */}
+            <div className={selfIntro.emailView}>
+              <EmailIcon className={selfIntro.iconView} />
+              <span className={selfIntro.emailText}>vishwakanths18@gmail.com</span>
             </div>
 
-            {/* Linkedin */}
-            <div className={selfIntro.linkedinView}>
-              <LinkedinIcon className={selfIntro.githubIcon} />
-              <span>Linkedin</span>
-            </div>
-
-            {/* Resume */}
-            <div className={selfIntro.resumeView}>
-              <ResumeIcon className={selfIntro.githubIcon} />
-              <span>Resume</span>
+            {/* Mobile View */}
+            <div className={selfIntro.emailView}>
+              <MobileIcon className={selfIntro.iconView} />
+              <span className={selfIntro.emailText}>6380272457</span>
             </div>
           </div>
-        </div>
+
+          {/* Online profile view */}
+          <div className={selfIntro.onlineProfileView}>
+            {/* Github */}
+            <Link target="_blank" href={githubLink} className={selfIntro.githubView}>
+              <GithubIcon className={selfIntro.githubIcon} />
+              <span className={selfIntro.iconText}>Github</span>
+            </Link>
+
+            {/* Linkedin */}
+            <Link target="_blank" href={linkedInUrl} className={selfIntro.linkedinView}>
+              <LinkedinIcon className={selfIntro.githubIcon} />
+              <span className={selfIntro.iconText} >Linkedin</span>
+            </Link>
+
+            {/* Resume */}
+            <Link target="_blank" href="/Vishwakanth Resume 2024.pdf"
+              download="Vishwakanth Resume 2024.pdf" className={selfIntro.resumeView}>
+              <ResumeIcon className={selfIntro.githubIcon} />
+              <span className={selfIntro.iconText}>Resume</span>
+            </Link>
+          </div>
+        </motion.div>
       </div>
       {/* </motion.div> */}
     </motion.div>

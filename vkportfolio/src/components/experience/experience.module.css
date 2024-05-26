@@ -6,6 +6,10 @@
   @apply text-2xl lg:text-3xl text-black font-bold;
 }
 
+.experienceTitleDark{
+  @apply text-white
+}
+
 .gridCard {
   @apply grid grid-cols-1 md:grid-cols-2 gap-10 p-4 shadow-xl rounded-md border-2 mt-5;
 }

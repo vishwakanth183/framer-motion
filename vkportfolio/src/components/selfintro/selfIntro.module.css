@@ -1,5 +1,5 @@
 .selfIntroView {
-  @apply mt-36 mx-5;
+  @apply pt-36 mx-5;
 }
 
 .gridSelfIntro {
@@ -11,15 +11,19 @@
 }
 
 .contactView {
-  @apply flex flex-col lg:flex-row shadow-xl rounded-md border-2 py-5 items-center;
+  @apply flex flex-col shadow-xl rounded-md border-2 py-5 lg:h-72 bg-purple-50;
 }
 
-.leftView {
-  @apply flex flex-col gap-3 pl-0 lg:pl-6;
+.onlineProfileView {
+  @apply flex w-full flex-wrap lg:flex-row gap-3 justify-center items-start lg:pt-3 pb-3 lg:mb-0; 
 }
 
 .nameText {
-  @apply text-lg lg:text-3xl text-black font-semibold opacity-75;
+  @apply text-lg lg:text-3xl text-black dark:text-white font-semibold opacity-75;
+}
+
+.darkText{
+  @apply text-white
 }
 
 .highlightText {
@@ -39,25 +43,46 @@
 }
 
 .githubView {
-  @apply flex py-3 flex-row gap-3 bg-black text-lg font-semibold text-white items-center justify-center hover:scale-110 duration-200 w-48 self-center rounded-full cursor-pointer;
+  @apply flex py-2 flex-row gap-3 bg-black text-lg font-semibold text-white items-center justify-center hover:scale-110 duration-200 w-48 self-center rounded-full cursor-pointer;
 }
 
 .githubIcon {
-  @apply flex flex-shrink-0 size-8 text-white;
+  @apply flex flex-shrink-0 size-6 text-white;
 }
 
 .linkedinView {
-  @apply flex py-3 flex-row gap-3 bg-blue-500 text-lg font-semibold text-white items-center justify-center hover:scale-110 duration-200 w-48 self-center rounded-full cursor-pointer;
-}
-
-.linkedinIcon {
-  @apply flex flex-shrink-0 size-8 text-blue-500;
+  @apply flex py-2 flex-row gap-3 bg-blue-500 text-lg font-semibold text-white items-center justify-center hover:scale-110 duration-200 w-48 self-center rounded-full cursor-pointer;
 }
 
 .resumeView {
-  @apply flex py-3 flex-row gap-3 bg-green-400 text-lg font-semibold text-white items-center justify-center hover:scale-110 duration-200 w-48 self-center rounded-full cursor-pointer;
+  @apply flex py-2 flex-row gap-3 bg-green-700 text-lg font-semibold text-white items-center justify-center hover:scale-110 duration-200 w-48 self-center rounded-full cursor-pointer;
 }
 
-.resumeIcon {
-  @apply flex flex-shrink-0 size-8 text-green-400;
+.iconText{
+  @apply text-sm
 }
+
+.contactInfoText{
+  @apply text-xl font-semibold text-black px-5
+}
+
+.divider {
+  @apply w-full h-[1px] bg-gray-500 bg-opacity-20 my-2 mb-5;
+}
+
+.infoView{
+  @apply mb-5
+}
+
+.emailView{
+  @apply flex flex-row items-end px-5 gap-3 my-2
+}
+
+.iconView{
+  @apply size-8 text-purple-500 flex flex-shrink-0
+}
+
+.emailText{
+  @apply  text-base lg:text-lg font-medium text-black text-opacity-75
+}
+

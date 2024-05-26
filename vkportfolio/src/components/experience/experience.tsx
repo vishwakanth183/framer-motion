@@ -1,26 +1,33 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import experienceStyle from "./experience.module.css";
 import { experience } from "@/src/shared/contents/homeContent";
 import { PiShootingStarFill } from "react-icons/pi";
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import { GiDuration } from "react-icons/gi";
+import { UserContext } from "@/src/shared/context/useContext";
+import { useTheme } from "next-themes";
 
 const Experience = () => {
   // icon color for experience
   const iconColor = "purple";
 
+  const {setCurrentPage} = useContext(UserContext)
+  const { setTheme, resolvedTheme } = useTheme();
+
   return (
     <motion.div
+      id="experience"
+      onViewportEnter={()=>{setCurrentPage!("Experience")}}
       initial={{ scale: 0.8 }}
       whileInView={{ scale: 1 }}
       transition={{ ease: "easeInOut", duration: 0.5 }}
       viewport={{ once: true }}
       className={experienceStyle.experienceView}
     >
-      <span className={experienceStyle.experienceTitle}>Experience</span>
+      <span className={`${experienceStyle.experienceTitle} ${resolvedTheme == "dark" ? experienceStyle.experienceTitleDark : ""}`}>Experience</span>
       <div className={experienceStyle.gridCard}>
         {experience.map((experienceItem, index) => {
           return (

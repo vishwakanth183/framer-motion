@@ -6,6 +6,10 @@
   @apply text-2xl lg:text-3xl text-black font-bold;
 }
 
+.skillsTitleDark{
+  @apply text-white
+}
+
 .gridCard {
   @apply grid grid-cols-2 lg:grid-cols-9 gap-10 p-4 shadow-xl rounded-md border-2 mt-5;
 }
@@ -20,4 +24,8 @@
 
 .skillName {
   @apply text-sm md:text-sm text-purple-600 text-opacity-80 mt-4 font-normal line-clamp-1;
+}
+
+.skillNameDark{
+  @apply text-white
 }

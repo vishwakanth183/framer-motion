@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useContext } from "react";
 import skillStyles from "./skills.module.css";
 import { motion } from "framer-motion";
 import {
@@ -11,6 +11,8 @@ import {
   toolsSkills,
   webskills,
 } from "@/src/shared/contents/skills";
+import { UserContext } from "@/src/shared/context/useContext";
+import { useTheme } from "next-themes";
 
 const Skills = () => {
   const allSkills = [
@@ -22,14 +24,19 @@ const Skills = () => {
     ...programmingSkills,
   ];
 
+  const { setCurrentPage } = useContext(UserContext)
+  const { setTheme, resolvedTheme } = useTheme();
+
   return (
     <motion.div
+      id="skills"
+      onViewportEnter={() => { setCurrentPage!("Skills") }}
       initial={{ scale: 0.8 }}
       whileInView={{ scale: 1 }}
       transition={{ ease: "easeInOut", duration: 0.5 }}
       className={skillStyles.skillsView}
     >
-      <span className={skillStyles.skillsTitle}>Skills</span>
+      <span className={`${skillStyles.skillsTitle} ${resolvedTheme == "dark" ? skillStyles.skillsTitleDark : ""}`}>Skills</span>
       <div className={skillStyles.gridCard}>
         {allSkills.map((skill, index) => {
           return (
@@ -45,7 +52,7 @@ const Skills = () => {
                 alt={skill.skillName}
                 className={skillStyles.skillImage}
               />
-              <span className={skillStyles.skillName}>{skill.skillName}</span>
+              <span className={`${skillStyles.skillName} ${resolvedTheme == "dark" ? skillStyles.skillNameDark : ""}`}>{skill.skillName}</span>
             </motion.div>
           );
         })}

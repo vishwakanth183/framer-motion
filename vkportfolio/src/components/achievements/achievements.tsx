@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useContext } from "react";
 import achievementStyle from "./achievements.module.css";
 import { totalAchievements } from "@/src/shared/contents/achievement";
 import { FaShieldHalved as AchieveIcon } from "react-icons/fa6";
@@ -8,17 +8,24 @@ import { SiOnlyoffice as Office } from "react-icons/si";
 import { IoIosSchool as College } from "react-icons/io";
 import { FaSchool as School } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { UserContext } from "@/src/shared/context/useContext";
+import { useTheme } from "next-themes";
 
 const Achievement = () => {
+  const {setCurrentPage} = useContext(UserContext);
+  const { setTheme, resolvedTheme } = useTheme();
+
   return (
     <motion.div
+      id="achievements"
+      onViewportEnter={()=>{setCurrentPage!("Achievements")}}
       initial={{ scale: 0.8 }}
       whileInView={{ scale: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
       className={achievementStyle.achievementView}
     >
-      <span className={achievementStyle.achievementTitle}>Achievements</span>
+      <span className={`${achievementStyle.achievementTitle} ${resolvedTheme == "dark" ? achievementStyle.achievementTitleDark : ""}`}>Achievements</span>
       <div className={achievementStyle.achievementGridCard}>
         {totalAchievements.map((achievemtType, typeIndex) => {
           return (

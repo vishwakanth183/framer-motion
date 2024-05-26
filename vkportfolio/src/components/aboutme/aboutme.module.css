@@ -10,6 +10,11 @@
   @apply p-4 shadow-xl text-black text-base font-normal rounded-md border-2 mt-5;
 }
 
+.titleDark{
+  @apply text-white
+}
+
+
 .description {
   @apply mt-5;
 }

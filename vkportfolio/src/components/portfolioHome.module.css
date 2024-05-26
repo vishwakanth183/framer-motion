@@ -1,3 +1,7 @@
 .mainView {
   @apply min-h-screen w-full bg-white flex flex-col overflow-x-hidden;
 }
+
+.darkModeView{
+  @apply bg-black
+}

@@ -1,22 +1,22 @@
 export const navmenus = [
   {
     displayName: "About Me",
-    link: "#aboutme",
+    link: "aboutme",
   },
   {
     displayName: "Experience",
-    link: "#experience",
+    link: "experience",
   },
   {
     displayName: "Skills",
-    link: "#skills",
+    link: "skills",
   },
   {
     displayName: "Achievements",
-    link: "#achievements",
+    link: "achievements",
   },
   {
     displayName: "Certification",
-    link: "#certification",
+    link: "certification",
   },
 ];

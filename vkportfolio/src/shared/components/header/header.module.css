@@ -1,5 +1,9 @@
 .headerView {
-  @apply fixed z-10 w-full p-5 shadow-lg bg-white;
+  @apply fixed z-10 w-full p-5 shadow-lg bg-white dark:bg-black;
+}
+
+.dark{
+  @apply bg-black  shadow-slate-900
 }
 
 .navbar {
@@ -7,7 +11,7 @@
 }
 
 .navbrandText {
-  @apply text-2xl md:text-3xl font-bold text-black;
+  @apply text-2xl md:text-3xl font-bold text-black dark:text-white;
 }
 
 .navMenu {
@@ -23,7 +27,7 @@
 }
 
 .navItemText {
-  @apply text-base font-medium text-white lg:text-black text-opacity-80;
+  @apply text-base font-medium text-white lg:text-black dark:text-white text-opacity-80;
 }
 
 .activeItemText {
@@ -49,7 +53,7 @@
 }
 
 .mobileMenu.active {
-  @apply flex duration-700 md:hidden;
+  @apply flex duration-700 lg:hidden;
 }
 
 .hamburgerSection {
@@ -88,4 +92,8 @@
 
 .open .hamburgerBottom {
   @apply -rotate-45 translate-y-[6px] translate-x-[6px] bg-white;
+}
+
+.modeIcon{
+  @apply bg-black dark:bg-white size-8 text-sm text-white dark:text-black p-1 rounded-full cursor-pointer scale-110 hover:scale-150 duration-150
 }
