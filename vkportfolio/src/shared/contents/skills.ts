@@ -12,6 +12,14 @@ export const webskills = [
     imgUrl: "/skills/web/framermotion.svg",
   },
   {
+    skillName: "Tailwind CSS",
+    imgUrl: "/skills/web/tailwindcss.svg",
+  },
+  {
+    skillName: "Bootstrap",
+    imgUrl: "/skills/web/bootstrap.svg",
+  },
+  {
     skillName: "Material UI",
     imgUrl: "/skills/web/mui.svg",
   },

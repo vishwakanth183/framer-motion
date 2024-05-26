@@ -15,7 +15,7 @@
 }
 
 .onlineProfileView {
-  @apply flex w-full flex-wrap lg:flex-row gap-3 justify-center items-start lg:pt-3 pb-3 lg:mb-0; 
+  @apply flex w-full flex-col lg:flex-row gap-3 justify-center items-start lg:pt-3 pb-3 lg:mb-0; 
 }
 
 .nameText {
