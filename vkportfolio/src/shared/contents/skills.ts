@@ -79,11 +79,11 @@ export const graphicSkills = [
   },
   {
     skillName: "Illustrator",
-    imgUrl: "/skills/graphic/ae.svg",
+    imgUrl: "/skills/graphic/ai.svg",
   },
   {
     skillName: "Premier Pro",
-    imgUrl: "/skills/graphic/ae.svg",
+    imgUrl: "/skills/graphic/pr.svg",
   },
   {
     skillName: "After Effects",
