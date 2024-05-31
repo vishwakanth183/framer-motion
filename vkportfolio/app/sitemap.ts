@@ -1,24 +1,52 @@
-import { MetadataRoute } from 'next'
- 
+import { MetadataRoute } from "next";
+
+interface SitemapItem {
+  loc: string;
+  lastmod: string;
+  changefreq: string;
+  priority: number;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const baseUrl = "https://vkportfolio-nine.vercel.app"; // Update with your base URL
+
+  const sections: SitemapItem[] = [
     {
-      url: 'https://acme.com',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 1,
+      loc: `${baseUrl}#aboutme`,
+      lastmod: new Date().toISOString(),
+      changefreq: "weekly",
+      priority: 1.0,
     },
     {
-      url: 'https://acme.com/about',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      loc: `${baseUrl}#skills`,
+      lastmod: new Date().toISOString(),
+      changefreq: "weekly",
+      priority: 1.0,
     },
     {
-      url: 'https://acme.com/blog',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.5,
+      loc: `${baseUrl}#experience`,
+      lastmod: new Date().toISOString(),
+      changefreq: "weekly",
+      priority: 1.0,
     },
-  ]
+    {
+      loc: `${baseUrl}#certification`,
+      lastmod: new Date().toISOString(),
+      changefreq: "weekly",
+      priority: 1.0,
+    },
+    {
+      loc: `${baseUrl}#achievements`,
+      lastmod: new Date().toISOString(),
+      changefreq: "weekly",
+      priority: 1.0,
+    },
+  ];
+
+  return sections.map((item) => ({
+    url: item.loc,
+    lastmod: item.lastmod,
+    changefreq: item.changefreq,
+    priority: item.priority,
+  }));
 }
