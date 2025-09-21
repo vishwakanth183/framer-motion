@@ -47,11 +47,11 @@ const SelfIntro = () => {
             // animate={{ scale: 1 }}
             // viewport={{once:true}}
             transition={{ duration: 1 }}
-            // src={"/profile_pic.jpg"}
+            src={"/profile_pic.png"}
             alt="Profile Pic"
-            src={
-              "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=600"
-            }
+            // src={
+            //   "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=600"
+            // }
             className={`${selfIntro.profilePic}`}
           />
           {/* <div className={`${selfIntro.profilePic}`}></div> */}
