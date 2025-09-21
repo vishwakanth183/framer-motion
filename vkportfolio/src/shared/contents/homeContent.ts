@@ -7,22 +7,16 @@ export const contactInfo = {
 // Experience content
 export const experience = [
   {
-    role: "Senior Software Developer",
+    role: "Frontend Developer",
     location: "Centizen Inc",
-    startDate: "March 2022",
+    startDate: "August 2024",
     endDate: "Present",
   },
   {
-    role: "Junior Software Developer",
+    role: "Software Developer",
     location: "Centizen Inc",
-    startDate: "June 2021",
-    endDate: "March 2022",
-  },
-  {
-    role: "Internship",
-    location: "Centizen Inc",
-    startDate: "Jan 2021",
-    endDate: "Jun 2021",
+    startDate: "January 2021",
+    endDate: "August 2024",
   },
 ];
 
@@ -44,6 +38,12 @@ export const projects = [
     projectName: "Zenyo Payroll",
     company: "Centizen",
     startDate: "Jan 2024",
+    endDate: "Aug 2024",
+  },
+  {
+    projectName: "SmartPath",
+    company: "TCS",
+    startDate: "Aug 2024",
     endDate: "Present",
   },
 ];
