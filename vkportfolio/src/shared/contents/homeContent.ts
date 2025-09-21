@@ -8,7 +8,7 @@ export const contactInfo = {
 export const experience = [
   {
     role: "Frontend Developer",
-    location: "Centizen Inc",
+    location: "Tata Consultancy Services",
     startDate: "August 2024",
     endDate: "Present",
   },
