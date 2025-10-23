@@ -152,3 +152,26 @@ export const programmingSkills = [
     imgUrl: "/skills/programming/python.svg",
   },
 ];
+
+export const cloudandAISkills = [
+  {
+    skillName: "Github Copilot",
+    imgUrl: "/skills/Cloud & AI/github copilot.svg",
+  },
+  {
+    skillName: "Docker",
+    imgUrl: "/skills/Cloud & AI/docker.svg",
+  },
+  {
+    skillName: "Kubernetes & Microservices",
+    imgUrl: "/skills/Cloud & AI/kubernetes.svg",
+  },
+  {
+    skillName: "Google Cloud",
+    imgUrl: "/skills/Cloud & AI/google-cloud.svg",
+  },
+  {
+    skillName: "AWS",
+    imgUrl: "/skills/Cloud & AI/aws.svg",
+  }
+]

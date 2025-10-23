@@ -5,6 +5,7 @@ import skillStyles from "./skills.module.css";
 import { motion } from "framer-motion";
 import {
   backendSkills,
+  cloudandAISkills,
   graphicSkills,
   mobileSkills,
   programmingSkills,
@@ -18,6 +19,7 @@ const Skills = () => {
   const allSkills = [
     ...webskills,
     ...mobileSkills,
+    ...cloudandAISkills,
     ...graphicSkills,
     ...backendSkills,
     ...toolsSkills,
