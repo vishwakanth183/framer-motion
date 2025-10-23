@@ -36,7 +36,11 @@ const Certification = () => {
               key={index}
             >
               <Link
-                href={certificate.verfication_url}
+                href={
+                  certificate.verfication_url.length > 0
+                    ? certificate.verfication_url
+                    : `/docs/${certificate.offline_url}.pdf`
+                }
                 className={certificationStyles.linkView}
                 target="_blank"
               >

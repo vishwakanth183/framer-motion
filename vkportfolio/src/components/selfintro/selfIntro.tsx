@@ -109,8 +109,8 @@ const SelfIntro = () => {
             </Link>
 
             {/* Resume */}
-            <Link target="_blank" href="/Vishwakanth Resume 2024.pdf"
-              download="Vishwakanth Resume 2024.pdf" className={selfIntro.resumeView}>
+            <Link target="_blank" href="/Vishwakanth CV 2025.pdf"
+              download="Vishwakanth CV 2025.pdf" className={selfIntro.resumeView}>
               <ResumeIcon className={selfIntro.githubIcon} />
               <span className={selfIntro.iconText}>Resume</span>
             </Link>

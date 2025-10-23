@@ -1,5 +1,68 @@
 export const certificates = [
   {
+    certificateName: "Cloud Digital Leader Certification",
+    verfication_url:"https://www.credly.com/badges/b4cab695-1a2c-4284-810d-3c6a2ebcac45/public_url"
+  },
+  {
+    certificateName: "Generative AI Leader Certification",
+    verfication_url:"https://www.credly.com/badges/51bc611d-cf73-4035-b707-e00afd9ddf91/linked_in_profile"
+  },
+  {
+    certificateName: "Full Stack Web Development",
+    verfication_url:"https://www.coursera.org/account/accomplishments/verify/C5ICI83H0HMB"
+  },
+  {
+    certificateName: "Kubernetes Microservices",
+    verfication_url:"",
+    offline_url:"Kubernetes Microservices",
+  },
+  {
+    certificateName: "AWS EKS",
+    verfication_url:"",
+    offline_url:"AWS EKS",
+  },
+  {
+    certificateName: "Github Actions",
+    verfication_url:"",
+    offline_url:"Github Actions",
+  },
+   {
+    certificateName: "AWS Essentials",
+    verfication_url:"",
+    offline_url:"AWS Essentials",
+  },
+  {
+    certificateName: "Docker",
+    verfication_url:"",
+    offline_url:"Docker for Developers",
+  },
+  {
+    certificateName: "Angular Essentials",
+    verfication_url:"",
+    offline_url:"Angular Essentials",
+  },
+  {
+    certificateName: "CI/CD Essentials",
+    verfication_url:"",
+    offline_url:"CI-CD Devops",
+  },
+  {
+    certificateName: "Prompt Engineering",
+    verfication_url:"https://www.udemy.com/certificate/UC-477ba945-5f75-4df0-a5bd-bce395dcdf5c/"
+  },
+  {
+    certificateName: "Bootstrap5",
+    verfication_url:"https://www.udemy.com/certificate/UC-8a4ad087-620d-4078-976c-4225a39c0773/"
+  },
+  {
+    certificateName: "Tailwind CSS",
+    verfication_url:"https://www.udemy.com/certificate/UC-972944e0-bfae-4efd-9d66-71a3b341eb20/"
+  },
+  {
+    certificateName: "Flutter and Dart",
+    verfication_url:"https://www.udemy.com/certificate/UC-68de5e90-1d81-4e40-8fd5-e525f8db8997/"
+  },
+  {
     certificateName: "Next JS & React",
     verfication_url:
       "https://www.udemy.com/certificate/UC-588d4ec0-e4a7-43fa-8ad6-4add5ae60dbd/",
