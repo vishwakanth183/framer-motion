@@ -2,6 +2,9 @@
   @apply fixed z-10 w-full p-5 shadow-lg bg-white dark:bg-black;
 }
 
+.applyZindex{
+  z-index: 100000
+}
 .dark{
   @apply bg-black  shadow-slate-900
 }

@@ -2,8 +2,6 @@
 
 import React, { useLayoutEffect, useState } from "react";
 import portfolioHome from "./portfolioHome.module.css";
-import Image from "next/image";
-import { motion } from "framer-motion";
 import SelfIntro from "./selfintro/selfIntro";
 import AboutMe from "./aboutme/aboutme";
 import Experience from "./experience/experience";
@@ -11,6 +9,8 @@ import Skills from "./skills/skills";
 import Achievement from "./achievements/achievements";
 import Certification from "./certification/certification";
 import { useTheme } from "next-themes";
+import Projects from "./projects/projects";
+import { experienceProjects } from "./projects/projectData";
 
 const PortfolioHome = () => {
   const [onClientSide, setOnClientSide] = useState<boolean>(false);
@@ -30,7 +30,8 @@ const PortfolioHome = () => {
     <div className={`${portfolioHome.mainView} ${resolvedTheme == "dark" ? portfolioHome.darkModeView : ""}`}>
       <SelfIntro />
       <AboutMe />
-      <Experience />
+      <Projects title="Experience" id="experience" currentPage="Experience" projectData={experienceProjects}/>
+      {/* <Experience /> */}
       <Skills />
       <Achievement />
       <Certification />

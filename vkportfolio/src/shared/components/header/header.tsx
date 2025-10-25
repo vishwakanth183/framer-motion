@@ -152,7 +152,7 @@ const Header = () => {
 
   return (
     <>
-      <div className={`${headerStyle.headerView} ${resolvedTheme == "dark" ? headerStyle.dark : ""}`}>
+      <div className={`${headerStyle.headerView} ${resolvedTheme == "dark" ? headerStyle.dark : ""} ${headerStyle?.applyZindex}`}>
         <nav className={`${headerStyle.navbar}`}>
           {/* Left View */}
           <motion.div

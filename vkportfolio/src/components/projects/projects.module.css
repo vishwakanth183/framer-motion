@@ -1,0 +1,82 @@
+.projectsView {
+  @apply my-10 mx-5;
+}
+
+.projectTitle {
+  @apply text-2xl lg:text-3xl text-black font-bold;
+}
+
+.projectInnerView{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid beige;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+
+    /* ✅ uniform height control */
+    height: 100%; /* for flex child consistency */
+    min-height: 550px; /* adjust based on your design */
+    box-sizing: border-box;
+}
+
+.projectTitleDark{
+  @apply text-white
+}
+
+.projectRowTitle{
+    @apply text-base text-black font-bold
+}
+
+.projectRowTitleSmall{
+    @apply text-xs text-black
+}
+
+.projectRowTitleDarkSmall{
+    @apply text-white
+}
+
+.projectRowTitleDark{
+    @apply text-white
+}
+
+.listItem{
+    @apply text-sm text-black
+}
+
+.listItemDark{
+    @apply text-white
+}
+
+.projectValue{
+    @apply text-lg text-black
+}
+
+.gridCard {
+  @apply grid grid-cols-2 lg:grid-cols-9 gap-10 p-4 shadow-xl rounded-md border-2 mt-5;
+}
+
+.projectCard{
+  @apply gap-10 p-4 shadow-xl rounded-md border-2 mt-5;
+}
+
+.projectItem {
+  @apply flex flex-col justify-center items-center;
+}
+
+.projectImage {
+  @apply rounded-lg w-[80px] h-[80px] shadow-lg ring-1 ring-purple-300 p-3 justify-center object-contain;
+}
+
+.projectName {
+  @apply text-sm md:text-sm text-purple-600 text-opacity-80 mt-4 font-normal line-clamp-1;
+}
+
+.projectNameDark{
+  @apply text-white
+}
+
+/* f3wnfoi32nofin32oinf */
+

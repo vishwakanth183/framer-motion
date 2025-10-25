@@ -1,0 +1,4 @@
+.headView {
+  @apply min-h-screen w-full bg-white flex flex-col overflow-x-hidden;
+  background: linear-gradient(to bottom right, #39154E 0%, #B99BD0 100%) !important;
+}

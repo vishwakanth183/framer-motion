@@ -1,10 +1,10 @@
 export const certificates = [
   {
-    certificateName: "Cloud Digital Leader Certification",
+    certificateName: "Google Cloud Digital Leader Certification",
     verfication_url:"https://www.credly.com/badges/b4cab695-1a2c-4284-810d-3c6a2ebcac45/public_url"
   },
   {
-    certificateName: "Generative AI Leader Certification",
+    certificateName: "Google Generative AI Leader Certification",
     verfication_url:"https://www.credly.com/badges/51bc611d-cf73-4035-b707-e00afd9ddf91/linked_in_profile"
   },
   {
