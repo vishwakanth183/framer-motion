@@ -76,7 +76,7 @@
 }
 
 .hamburgerDarkMode{
-  @apply bg-white
+  @apply bg-white !important
 }
 
 .hamburgerMiddle {
@@ -96,7 +96,7 @@
 
 .open .hamburgerTop {
   /* transform: rotate(45deg) translateY(6px) translateX(6px); */
-  @apply rotate-45 translate-y-[6px] translate-x-[6px] bg-white;
+  @apply rotate-45 translate-y-[6px] translate-x-[6px] bg-black;
 }
 
 .open .hamburgerMiddle {
@@ -104,7 +104,7 @@
 }
 
 .open .hamburgerBottom {
-  @apply -rotate-45 translate-y-[6px] translate-x-[6px] bg-white;
+  @apply -rotate-45 translate-y-[6px] translate-x-[6px] bg-black;
 }
 
 .modeIcon{
