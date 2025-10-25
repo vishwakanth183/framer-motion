@@ -1,13 +1,13 @@
 .headerView {
   @apply fixed z-10 w-full p-5 shadow-lg bg-white dark:bg-black;
 }
-
-.applyZindex{
-  z-index: 100000
-}
 .dark{
   @apply bg-black  shadow-slate-900
 }
+
+.applyZindex {
+    z-index: 100000;
+  }
 
 .navbar {
   @apply flex flex-row justify-between items-center;
@@ -50,6 +50,12 @@
 }
 
 /* Mobile menu */
+
+@media (max-width: 1024px) {
+  .applyZindex {
+    z-index: 0;
+  }
+}
 
 .mobileMenu {
   @apply z-20 hidden fixed flex-col items-center justify-start bottom-0 h-screen w-full bg-black bg-opacity-90 pt-32 space-y-10;
