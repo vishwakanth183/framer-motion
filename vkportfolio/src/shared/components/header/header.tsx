@@ -177,6 +177,7 @@ const Header = () => {
       {/* Hamburger section */}
       <button
         id="menu-btn"
+        style={{zIndex: 1000000}}
         onClick={() => onHamburgerTap(!isMobileMenu)}
         className={`${headerStyle.hamburgerSection}`}
       >

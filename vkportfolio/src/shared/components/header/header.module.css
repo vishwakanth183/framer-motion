@@ -53,7 +53,7 @@
 
 @media (max-width: 1024px) {
   .applyZindex {
-    z-index: 0;
+    z-index: none;
   }
 }
 
