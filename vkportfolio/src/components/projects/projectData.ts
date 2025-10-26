@@ -5,6 +5,7 @@ export const experienceProjects = [
     location: "Chennai",
     role: "Frontend Developer",
     duration: "Aug 2024 – Present",
+    project: "SmartPath",
     responsibilities: [
       "Developed dealer-specific enterprise applications for Toyota Financial Services using React and Next.js, delivering responsive, pixel-perfect UIs.",
       "Collaborated with design, backend, and product teams to align business logic, improving overall user experience.",
